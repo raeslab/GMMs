@@ -15,6 +15,7 @@ $SCORE_ESTIMATOR Use [median|average] of observer KO as module score
 $INPUT_DIR input directory containing the input files for each sample.
 
 GMMs.v1.07.simple.txt: the GMM set
+
 2: input file format id (always 2)
 
 The files are tab-separated and should contain an id, a taxon, a K_number and an abundance.
