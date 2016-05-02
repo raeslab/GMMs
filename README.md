@@ -5,7 +5,7 @@
 To run the module mapping tool use the following command
 
 ```Bash
-java -jar gmms.jar $COVERAGE $SCORE_ESTIMATOR GMMs.v1.07.simple.txt $INPUT_DIR $OUTPUT_DIR 2
+java -jar gmms.jar $COVERAGE $SCORE_ESTIMATOR GMMs.v1.07.txt $INPUT_DIR $OUTPUT_DIR 2
 ```
 
 where 
