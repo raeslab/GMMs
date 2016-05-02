@@ -12,7 +12,7 @@ where
 
 $COVERAGE is the coverage cutouff for the module  
 $SCORE_ESTIMATOR Use [median|average] of observer KO as module score  
-$INPUT_DIR input directory containing the input files for each sample 
+$INPUT_DIR input directory containing the input files for each sample  
 $OUTPUT_DIR output directory for module profiles. Automatically created by the tool if it does not exist.
 
 GMMs.v1.07.simple.txt: the GMM set  
