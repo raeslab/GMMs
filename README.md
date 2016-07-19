@@ -17,7 +17,7 @@ $OUTPUT_DIR output directory for module profiles. Automatically created by the t
 GMMs.v1.07.simple.txt: the GMM set  
 2: input file format id (always 2)  
 
-The files in $INPUT_DIR are tab-separated and should contain an id, a taxon, a K_number and an abundance.
+The files in $INPUT_DIR are headerless, tab-separated and should contain an id, a taxon, a K_number and an abundance.
 Below is an example:
 
 1000570.HMPREF9966_0409	Firmicutes	K01872	1  
