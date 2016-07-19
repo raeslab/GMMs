@@ -10,7 +10,7 @@ java -jar gmms.jar $COVERAGE $SCORE_ESTIMATOR GMMs.v1.07.txt $INPUT_DIR $OUTPUT_
 
 where 
 
-$COVERAGE is the coverage cutouff for the module  
+$COVERAGE is the coverage cutouff for the module [a value between 0 and 1]  
 $SCORE_ESTIMATOR Use [median|average] of observer KO as module score  
 $INPUT_DIR input directory containing the input files for each sample  
 $OUTPUT_DIR output directory for module profiles. Automatically created by the tool if it does not exist  
