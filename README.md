@@ -1,27 +1,35 @@
 # GMMs
-#### A tool to generate metabolic modules profiles from metagenomic samples
+### A tool to generate metabolic modules profiles from metagenomic samples
 
+Depends on Java8.
 
-To run the module mapping tool use the following command
+usage: java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] [-h] [-i <PATH>] [--ignore-taxonomic-info] [-n] [-o <DIRECTORY>] [-s <SCORE-ESTIMATOR>] [-t <THREADS>] [--Xdistribute]
 
-```Bash
-java -jar gmms.jar $COVERAGE $SCORE_ESTIMATOR GMMs.v1.07.txt $INPUT_DIR $OUTPUT_DIR 2
-```
+<pre>
+ -a,--annotation <ANNOTATION>             Input file annotation.
+                                          Use 1 for taxonomic annotation followed by orthologs files or 2 for orthologs only.
+                                          Defaults to 1
+ -c,--coverage <COVERAGE>                 The minimum coverage cut-off to accept a module [0.0 to 1.0].
+                                          Defaults to -1, where the coverage is learned from the coverage distribution of all modules
+ -d,--database <FILE>                     The path to the modules database
+ -e,--export-format <FORMAT>              The output file format.
+                                          Use 1 for single tab separated files containing module id, abundance and coverage. Use 2 for an abundance and a coverage matrices.
+                                          Defaults to 1.
+ -h,--help                                Show this help message and exit
+ -i,--input <PATH>                        Path to the input matrix or input directory with one file per sample
+    --ignore-taxonomic-info               Ignore taxonomic info from input file and infer modules for the whole metagenome instead
+ -n,--normalize-by-length                 Divide module score by its length. When combined with a median estimator, missing reactions (score = 0 )
+                                          are included when estimating the median. If the estimated score equals zero then it is replaced by
+                                          the minimum observed reaction score. If this option is specified, score calculation is based only on
+                                          the number of observed reactions
+ -o,--output-dir <DIRECTORY>              Path to the output directory
+ -s,--score-estimator <SCORE-ESTIMATOR>   The score estimatore.
+                                          Accepted values are [median|average].
+                                          Defaults to median
+ -t,--threads <THREADS>                   Number of threads to use when mapping the modules.
+                                          Defaults to 1
+    --Xdistribute                         Experimental feature - When an ortholog is shared, distribute its abundance by the count of sharing modules.
 
-where 
-
-$COVERAGE is the coverage cutouff for the module [a value between 0 and 1]  
-$SCORE_ESTIMATOR Use [median|average] of observer KO as module score  
-$INPUT_DIR input directory containing the input files for each sample  
-$OUTPUT_DIR output directory for module profiles. Automatically created by the tool if it does not exist  
-GMMs.v1.07.simple.txt: the GMM set  
-2: input file format id (always 2)  
-
-The files in $INPUT_DIR are headerless, tab-separated and should contain an id, a taxon, a K_number and an abundance.
-Below is an example:
-
-1000570.HMPREF9966_0409	Firmicutes	K01872	1  
-1000570.HMPREF9966_0529	Firmicutes	K00036	1  
-1000570.HMPREF9966_0630	Firmicutes	K03702	1  
-1000570.HMPREF9966_0697	Firmicutes	K01689	1
+Licensed under a 3-clause BSD License, https://github.com/raeslab/GMMs/blob/master/LICENSE
+</pre>
 
