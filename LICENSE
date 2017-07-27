@@ -1,14 +1,12 @@
 Academic Non-commercial Software License Agreement for GMMs
 
 This software is provided by VIB vzw (hereinafter "VIB") located at Rijvisschestraat 120,
-B-9052 Zwijnaarde, Belgium under a software license to the user (hereinafter "USER") under the terms and conditions outlined below (the “Agreement”). 
- 
-WHEREAS VIB owns or has rights in certain software called GMMs (hereinafter "Licensed Software"), and VIB desires to license said software so that it becomes available for academic research use. 
- 
-WHEREAS USER desires to acquire a non-exclusive license to use the Licensed Software for internal non-commercial research purposes only.
- 
-NOW, THEREFORE, in consideration of the mutual promises and covenants
-contained herein, the parties agree as follows:
+B-9052 Zwijnaarde, Belgium under a software license to the user (hereinafter "USER") under the terms 
+and conditions outlined below (the “Agreement”). WHEREAS VIB owns or has rights in certain software 
+called GMMs (hereinafter "Licensed Software"), and VIB desires to license said software so that it 
+becomes available for academic research use. WHEREAS USER desires to acquire a non-exclusive license to use the Licensed
+Software for internal non-commercial research purposes only. NOW, THEREFORE, in consideration of the mutual promises and
+covenants contained herein, the parties agree as follows:
  
 1. Licensed Software is the work of Youssef Darzi and Jeroen Raes.
 The copyright in Licensed Software is owned by VIB and Vrije Universiteit Brussel.
@@ -29,7 +27,8 @@ research in collaboration with a company.
 4. USER confirms to be an academic user. For academic users, there is no
 license fee.
  
-5. USER shall acknowledge VIB as the provider of Licensed Software using a reference to: Darzi et al. (2014) in any manuscript describing data obtained using Licensed Software.
+5. USER shall acknowledge VIB as the provider of Licensed Software using a reference to: Darzi et al. (2014) in any
+manuscript describing data obtained using Licensed Software.
  
 6. This license does not entitle USER to receive from VIB hard-copy
 documentation, technical support, telephone assistance, or enhancements or
