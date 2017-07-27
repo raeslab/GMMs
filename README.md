@@ -30,6 +30,6 @@ usage: java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FO
                                           Defaults to 1
     --Xdistribute                         Experimental feature - When an ortholog is shared, distribute its abundance by the count of sharing modules.
 
-Licensed under a 3-clause BSD License, https://github.com/raeslab/GMMs/blob/master/LICENSE
+Licensed under an Academic Non-commercial Software License Agreement, https://github.com/raeslab/GMMs/blob/master/LICENSE
 </pre>
 
