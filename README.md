@@ -33,3 +33,5 @@ usage: java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FO
 Licensed under an Academic Non-commercial Software License Agreement, https://github.com/raeslab/GMMs/blob/master/LICENSE
 </pre>
 
+### Related publications and versionning
+For the [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688) , we used version [8cf60cc735](../../tree/8cf60cc735034f8849f888103e6bfb98d30c9fe4) of this repository.
