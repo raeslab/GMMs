@@ -3,7 +3,7 @@ A tool to generate pathway modules profiles from meta-omic samples.
 
 ### Prerequisites
 - Java 8 
-- A reference module database. The [database](../master/GMMs.v1.07.txt) bundled here is specific for human gut metabolic modules and was described in [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688).
+- A reference module database. The database [bundled](../master/GMMs.v1.07.txt) here is specific for human gut metabolic modules and was described in [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688).
 
 ### Usage
 java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] [-h] [-i <PATH>] [--ignore-taxonomic-info] [-n] [-o <DIRECTORY>] [-s <SCORE-ESTIMATOR>] [-t <THREADS>] [--Xdistribute]
