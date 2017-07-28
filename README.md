@@ -1,9 +1,12 @@
 # GMMs
-### A tool to generate metabolic modules profiles from metagenomic samples
+A tool to generate pathway modules profiles from meta-omic samples.
 
-Depends on Java8.
+### Prerequisites
+- Java 8 
+- A reference module database. The [database](../master/GMMs.v1.07.txt) bundled here is specific for human gut metabolic modules and was described in [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688).
 
-usage: java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] [-h] [-i <PATH>] [--ignore-taxonomic-info] [-n] [-o <DIRECTORY>] [-s <SCORE-ESTIMATOR>] [-t <THREADS>] [--Xdistribute]
+### Usage
+java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] [-h] [-i <PATH>] [--ignore-taxonomic-info] [-n] [-o <DIRECTORY>] [-s <SCORE-ESTIMATOR>] [-t <THREADS>] [--Xdistribute]
 
 <pre>
  -a,--annotation <ANNOTATION>             Input file annotation.
@@ -29,9 +32,10 @@ usage: java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FO
  -t,--threads <THREADS>                   Number of threads to use when mapping the modules.
                                           Defaults to 1
     --Xdistribute                         Experimental feature - When an ortholog is shared, distribute its abundance by the count of sharing modules.
-
-Licensed under an Academic Non-commercial Software License Agreement, https://github.com/raeslab/GMMs/blob/master/LICENSE
 </pre>
 
+### License
+[Academic Non-commercial Software License Agreement](../master/LICENSE)
+
 ### Related publications and versionning
-For the [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688) , we used version [8cf60cc735](../../tree/8cf60cc735034f8849f888103e6bfb98d30c9fe4) of this repository.
+For the [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688) paper, we used version [8cf60cc735](../../tree/8cf60cc735034f8849f888103e6bfb98d30c9fe4) of this repository.
