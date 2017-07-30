@@ -40,4 +40,4 @@ java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] 
 ### Related publications and versionning
 For the [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688) paper, we used version [8cf60cc735](../../tree/8cf60cc735034f8849f888103e6bfb98d30c9fe4) of this repository.
 
-##### Developed by Youssef Darzi [github.com/omixer](omixer)
+##### Developed by Youssef Darzi [(@omixer)](https://github.com/omixer)
