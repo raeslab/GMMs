@@ -32,7 +32,7 @@ java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] 
                                           Defaults to median
  -t,--threads &lt;THREADS&gt;                   Number of threads to use when mapping the modules.
                                           Defaults to 1
-    --Xdistribute                         Experimental feature - When an ortholog is shared, distribute its abundance by the count of sharing modules.
+    --Xdistribute                         Experimental feature - When an ortholog is shared by N modules then its abundance is divided by N.
 </pre>
 
 ### License
