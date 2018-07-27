@@ -6,7 +6,7 @@ Module reactions are listed following their order in the module. Tab-separated r
 comma-separated reactions are all required for process completeness (AND operation).
 
 ### Mapping
-For mapping metagenomic profiles onto the GMMs database please refere to our reference pathways mapper [Omixer-RPM](https://github.com/raeslab/omixer-rpm).
+For mapping metagenomic profiles onto the GMMs database please refer to our reference pathways mapper [Omixer-RPM](https://github.com/raeslab/omixer-rpm).
 
 ### License
 [Academic Non-commercial Software License Agreement](../master/LICENSE)
