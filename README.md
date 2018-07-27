@@ -1,44 +1,15 @@
 # GMMs
-A tool to generate pathway modules profiles from meta-omic samples.
+A manually curated database of human gut metabolic modules, based on extensive literature review, as described in *[Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688)*
 
-### Prerequisites
-- Java 8 
-- A reference module database where modules reactions are tab-separated to indicate alternative	reactions (OR operation), while return- and comma-separated reactions	are	all	required	for	process	completeness	(AND	operation). The database [bundled](../master/GMMs.v1.07.txt) here is specific for human gut metabolic modules and was described in [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688). [KEGG Module](https://www.genome.jp/kegg/module.html) 
-or custom databases formatted accordingly would also work. 
+### Format
+Module reactions are listed following their order in the module. Tab-separated reactions indicate alternative reactions (OR operation), while return- and
+comma-separated reactions are all required for process completeness (AND operation).
 
-### Usage
-java -jar gmms.jar  [-a <ANNOTATION>] [-c <COVERAGE>] [-d <FILE>] [-e <FORMAT>] [-h] [-i <PATH>] [--ignore-taxonomic-info] [-n] [-o <DIRECTORY>] [-s <SCORE-ESTIMATOR>] [-t <THREADS>] [--Xdistribute]
-
-<pre>
- -a,--annotation &lt;ANNOTATION&gt;             Input file annotation.
-                                          Use 1 for taxonomic annotation followed by orthologs files or 2 for orthologs only.
-                                          Defaults to 1
- -c,--coverage &lt;COVERAGE&gt;                 The minimum coverage cut-off to accept a module [0.0 to 1.0].
-                                          Defaults to -1, where the coverage is learned from the coverage distribution of all modules
- -d,--database &lt;FILE&gt;                     The path to the modules database
- -e,--export-format &lt;FORMAT&gt;              The output file format.
-                                          Use 1 for single tab separated files containing module id, abundance and coverage. Use 2 for an abundance and a coverage matrices.
-                                          Defaults to 1.
- -h,--help                                Show this help message and exit
- -i,--input &lt;PATH&gt;                        Path to the input matrix or input directory with one file per sample
-    --ignore-taxonomic-info               Ignore taxonomic info from input file and infer modules for the whole metagenome instead
- -n,--normalize-by-length                 Divide module score by its length. When combined with a median estimator, missing reactions (score = 0 )
-                                          are included when estimating the median. If the estimated score equals zero then it is replaced by
-                                          the minimum observed reaction score. If this option is specified, score calculation is based only on
-                                          the number of observed reactions
- -o,--output-dir &lt;DIRECTORY&gt;              Path to the output directory
- -s,--score-estimator &lt;SCORE-ESTIMATOR&gt;   The score estimatore.
-                                          Accepted values are [median|average].
-                                          Defaults to median
- -t,--threads &lt;THREADS&gt;                   Number of threads to use when mapping the modules.
-                                          Defaults to 1
-    --Xdistribute                         Experimental feature - When an ortholog is shared by N modules then its abundance is divided by N.
-</pre>
+### Mapping
+For mapping metagenomic profiles onto the GMMs database please refere to our reference pathways mapper [Omixer-RPM](https://github.com/raeslab/omixer-rpm).
 
 ### License
 [Academic Non-commercial Software License Agreement](../master/LICENSE)
 
 ### Related publications and versioning
-For the [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688) paper, we used version [8cf60cc735](../../tree/8cf60cc735034f8849f888103e6bfb98d30c9fe4) of this repository.
-
-##### Developed by Youssef Darzi [(@omixer)](https://github.com/omixer)
+For the [Vieira-Silva et al. 2016](https://www.nature.com/articles/nmicrobiol201688) paper, we used version [1.07](../../releases/tag/v1.0.7) ([8cf60cc735](../../tree/8cf60cc735034f8849f888103e6bfb98d30c9fe4)) of this repository.
